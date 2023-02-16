@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+<div>
+	<link rel="stylesheet" type="text/css" href="greedy.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<!-- Import LaTeX writing (called MathJax) -->
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> 
+</div>
+
+</head>
+
+
+<!-- BODY -->
+<body style="padding: 10px">
+	<h2 >Greedy elements</h2>
+	<div>
+		To come:
+		<ul>
+			<li>Compute the greedy element pointed at \((d_1, d_2) \in \mathbb{Z}^2\).</li>
+			<li id="test">For a given point \((d_1, d_2) \in \mathbb{Z}^2\), indicate whether or not the greedy element is a cluster monomial (based on slope of d-vector). If it is a cluster monomial, give the cluster (in the degenerate case, give the two clusters) and the exponents.</li>
+		</ul>
+	</div>
+	<h5>Parameters</h5>
+	<div>Choose value for b: </div><input type="number" step="1" value="1" id="bValue">
+	<div>Choose value for c: </div><input type="number" step="1" value="1" id="cValue">
+	<div>Choose value for \(d_1\):</div><input onchange="greedyElement()" type="number" step="1" value="0" id="d1Value">
+	<div>Choose value for \(d_2\):</div><input onchange="greedyElement()" type="number" step="1" value="0" id="d2Value">
+	<div id="greedyElementOutput"></div>
+</body>
+
+<div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>	
+	<script type="text/javascript" src="greedy.js"></script>
+</div>
+</html>
