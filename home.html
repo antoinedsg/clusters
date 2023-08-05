@@ -7,34 +7,61 @@
   <link rel="stylesheet" href="style.css">
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.3.0/es5/tex-mml-chtml.min.js" integrity="sha384-8jUB5kp5ewZAYNWrJndD2QX9SgjK/4C6HNYNX/NoW+bg4osGPohEd6Zc+wWebl+8" crossorigin="anonymous"></script>
+
+    <!-- Import LaTeX writing (called MathJax) -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> 
+  <!-- Import math.js to perform maths operations in JS -->
+  <script src="math.js" type="text/javascript"></script>
 </head>
 <body>
   <header>
-    <img style="width: 80px" src="logo.png">
-    <h2 >Visual Cluster Algebras</h2>
+    <a href="home.html"><img style="width: 80px" src="logo.png"></a>
+    <h3 >Visual Cluster Algebras</h3>
+    <nav>
+      <ul>
+      <li ><a href="mutPattern.html">Mutation patterns</a></li>
+      <li ><a href="greedy.html">Greedy elements</a></li>
+      <li ><a href="dVectorFan.html">Denominator vector fan</a></li>
+    </ul>
+    </nav>
   </header>
   <main>
+
+  <i>
+    <ul>
+      <li>The symbol &dagger; means the notion in question is not yet implemented.</li> 
+      <li>All computations are displayed using LaTeX; to copy the TeX code, right-click on the section of interest.</li>
+    </ul>
+  </i>
     <section id="matrix-mutation">
-      <h2>Mutation patterns</h2>
-      <p>Learn about matrix mutation and use our interactive tool to perform mutations.</p>
-      <a href="mutPattern.html">Go to mutation patterns</a>
+      <div style="display: flex; justify-content: center; align-items: center;">
+      <div>
+        <h4><a href="mutPattern.html">Mutation patterns</a></h4>
+        <p>Following Fomin and Zelevinsky's definitions in <a class="literature" target="_blank" href="https://www.cambridge.org/core/journals/compositio-mathematica/article/cluster-algebras-iv-coefficients/6BED6C36574A3D8B1297235E607214FE"> Cluster algebras IV. Coefficients (2007)</a>, this tool computes:
+          <ol>
+            <li>(Tall) matrix mutations.</li>
+            <li>\(\mathbb{Z}^{\rm max} / \mathbb{Z}^{\rm min}\)-tropicalised cluster variable mutations&dagger;.</li>
+            <li>\(\mathbb{Z}^{\rm max} / \mathbb{Z}^{\rm min}\)-tropicalised Y-seed mutations&dagger;.</li>
+          </ol></p>
+      </div>
+      <div >
+        <img style="width: 50%" src="mutaTree.png">
+      </div>
+      </div>
     </section>
+
     <section id="greedy-elements">
-      <h2>Greedy Elements</h2>
-      <p>Learn about greedy elements and use our interactive tool to calculate them.</p>
-      <a href="greedy.html">Go to Greedy Elements</a>
+      <h4><a href="greedy.html">Greedy elements</a></h4>
+      <p>Greedy elements are distinguished elements in rank 2 cluster algebras, defined recursively in an article by <a class="literature" href="https://link.springer.com/article/10.1007/s00029-012-0115-1">Lee, Li and Zelevinsky</a> in 2012. This tool computes greedy elements in any rank 2 cluster algebra.</p>
     </section>
     <section id="denominator-vector-fan">
-      <h2>Denominator Vector Fan</h2>
-      <p>Learn about denominator vector fan and use our interactive tool to calculate denominator vectors.</p>
-      <a href="dVectorFan.html">Go to Denominator Vector Fan</a>
+      <h4><a href="dVectorFan.html">Denominator vector fan</a></h4>
+      <p>The Laurent phenomenon insures each cluster variable has a denominator vector with respect to a fixed initial seed. The set of all denominator vectors defines a simplicial fan, called the d-vector fan (with respect to a fixed seed). This tool provides a plot of the d-vector fan for any rank 2 cluster algebra.</p>
     </section>
-
-
     <section id="polytope-basis">
-      <h2>Polytope Basis</h2>
-      <p>Learn about polytope basis and use our interactive tool to calculate bases.</p>
-      <a href="#">Go to Polytope Basis</a>
+      <h4><a href="#">Polytope basis</a></h4>
+      <p>Coming soon...</p>
     </section>
   </main>
   <footer>

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" href="style.css">
 	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> 
 	<!-- Import math.js to perform maths operations in JS -->
@@ -55,7 +56,17 @@
 	</style>
 </head>
 <body>
-	<div><a href="home.html">Back to home</a></div>
+  <header>
+    <a href="home.html"><img style="width: 80px" src="logo.png"></a>
+    <h3 >Visual Cluster Algebras</h3>
+    <nav>
+      <ul>
+      <li ><a href="mutPattern.html">Mutation patterns</a></li>
+      <li ><a href="greedy.html">Greedy elements</a></li>
+      <li ><a href="dVectorFan.html">Denominator vector fan</a></li>
+    </ul>
+    </nav>
+  </header>
 	<div class="popup">
 		<button onclick="createGrid()">Choose matrix size</button>
 		<div class="popuptext" id="mutation-matrix" style="display: none">
